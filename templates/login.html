@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+
+{% block title %}| Profile{% endblock title %}
+
+{% block body %}
+
+
+<img src="https://fastly.picsum.photos/id/932/1920/1080.jpg?hmac=onZiaiLOjcyJ7j8FVe_kxvk3b-nRgVu9_5zng8hQPQc" alt="">
+<div class="container">
+    
+    <form class="position-absolute top-50 start-50 translate-middle bg-light p-4 rounded shadow bg-white bg-opacity-50" method="POST" style="max-width: 400px; width: 500px; font-size: large;">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">have you read <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank" style="color: blue;">Terms And Conditions</a> </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+</div>
+
+{% endblock body %}
